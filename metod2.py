@@ -39,7 +39,7 @@ def miller_rabin(n, k=5):
 # Example usage
 
 if __name__ == "__main__":
-    number_to_test = 10888869450418352160768000001  # Change this to the number you want to test
+    number_to_test = 1000003  # Change this to the number you want to test
     iterations = 20  # Number of iterations for the test
     is_prime = miller_rabin(number_to_test, iterations)
     if is_prime:

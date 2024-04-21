@@ -11,4 +11,4 @@ def is_prime(n: int) -> bool:
     return True
 
 if __name__ == "__main__":
-    print(is_prime(10888869450418352160768000001))
+    print(is_prime(1000003))
