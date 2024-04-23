@@ -5,7 +5,7 @@ import timeit
 numbers_to_test = [2, 3, 6, 12, 17, 18, 22, 38, 331999, 331222, 332222, 333333, 393919, 919393, 914000, 39916801, 30000000, 87178291199, 87178291190, 87178291200, 
                     99194853094755498, 99194453094755496, 99194853014755497]
 
-k = 20
+k = 20 #260 för typ jämnt
 
 def test_method1(primes_to_test):
     for prime in primes_to_test:
@@ -38,7 +38,7 @@ print(time4)
 print(time5)
 print(time6)
 
-print(f"Probability for error on method 2 is at most {(2**(-k)) * 100}%")
+print(f"Probability for error on method 2 is at most {(4**(-k)) * 100}%")
 
 print(f"Time coefficient for 10x higher prime with method 1 is {time1/time2}")
 print(f"Time coefficient for 100x higher prime with method 1 is {time1/time3}")
