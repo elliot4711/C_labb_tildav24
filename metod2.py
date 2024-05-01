@@ -4,7 +4,7 @@ def miller_rabin(n, k=5):
     # Code generated using chatGPT, prompt
     # can you help me make a probabilistic test using python to decide if a number is prime. The probability of error should be able to be reduced by repeating the test with several independently 
     # chosen values of a; for two commonly used tests, for any composite n at least half the a's detect n's compositeness, so k repetitions reduce the error probability 
-    # to at most 2−k, which can be made arbitrarily small by increasing k.
+    # to at most 4^-k, which can be made arbitrarily small by increasing k.
     """
     Miller-Rabin primality test
     Args:
@@ -43,8 +43,8 @@ def miller_rabin(n, k=5):
 # Example usage
 
 if __name__ == "__main__":
-    number_to_test = 100003  # Change this to the number you want to test
-    iterations = 20  # Number of iterations for the test
+    number_to_test = 9  # Change this to the number you want to test
+    iterations = 1  # Number of iterations for the test
     is_prime = miller_rabin(number_to_test, iterations)
     if is_prime:
         print(f"{number_to_test} is likely to be prime.")
